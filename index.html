@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>裝備現況管理系統</title>
+    <link rel="stylesheet" href="https://jsdelivr.net"> <!-- 快速美化 UI -->
+</head>
+<body>
+    <h1>器材狀態看板</h1>
+    <!-- 新增裝備表單 -->
+    <form id="addForm">
+        <input type="text" id="eqName" placeholder="裝備名稱" required>
+        <select id="eqStatus">
+            <option value="在庫">在庫</option>
+            <option value="使用中">使用中</option>
+            <option value="維修中">維修中</option>
+        </select>
+        <button type="submit">新增裝備</button>
+    </form>
+
+    <!-- 狀態列表 -->
+    <table>
+        <thead><tr><th>裝備名稱</th><th>目前狀態</th><th>操作</th></tr></thead>
+        <tbody id="eqTableBody"></tbody>
+    </table>
+
+    <script>
+        // JS 邏輯：從 localStorage 讀寫資料、渲染表格、切換狀態
+        // 點擊切換狀態時，自動更新資料並重新渲染
+    </script>
+</body>
+</html>
 
